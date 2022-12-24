@@ -218,7 +218,7 @@ local config = {
         -- Configure plugins
         plugins = {
                 init = {
-                        "joshdick/onedark.vim"
+                        { "navarasu/onedark.nvim" }
                         -- You can disable default plugins as follows:
                         -- ["goolord/alpha-nvim"] = { disable = true },
 
@@ -277,6 +277,7 @@ local config = {
                         -- ensure_installed = { "prettier", "stylua" },
                 },
                 ["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
+                        { "python" }
                         -- ensure_installed = { "python" },
                 },
         },
